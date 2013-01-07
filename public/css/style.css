@@ -1,0 +1,162 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: #3d3d3a;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	line-height: 1.4em; 
+	background-color: #d6d6ce;
+}
+
+h1{
+	text-transform: uppercase;
+}
+
+#header{
+	background: url(/images/header_background.jpg) repeat bottom;
+	width: 100%;
+	height: 100px;
+	min-width: 800px;
+}
+
+#logo{
+	float:left;
+	height: auto;
+	width: auto;
+	margin-left: 150px;
+	margin-bottom: auto;
+	margin-top: 10px;
+}
+#logo img{
+	height: 80px;
+	width: 180px;
+}
+
+#session{
+	float: right;
+	color: white;
+	line-height: 28px;
+}
+
+#menu{
+	float: right;
+	margin-right: 50px;
+	margin-top: 40px;
+}
+#menu ul{
+	list-style-type: none;
+}
+#menu ul li{
+	float: left;
+	display: inline;
+}
+#menu ul li a{
+	display: block;
+	width: 77px;
+	height: 31px;
+	line-height: 28px;
+	padding: 0;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: #d6d6ce;	
+	text-decoration: none;
+	font-weight: 400;
+	outline: none;
+	text-align: center;
+}
+
+
+#menu ul li a:hover{
+	color: #3388FF;
+}
+
+#formLogin{
+	height: 200px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+#formLogin form label{
+	font-size: 16px;
+	display: block;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+#formLogin form input{
+	height: 30px;
+	width: 180px;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+form input:focus{
+	border-color: #3388FF;
+	border-width: 3px;
+	padding: 0px;
+}
+#imgLogin{
+	height: 90px;
+	width: 190px;
+	display: inline;
+}
+
+
+.claner{clear: both;}
+
+.h10{height: 10px;}
+.h20{height: 20px;}
+.h30{height: 30px;}
+.h40{height: 40px;}
+
+
+#cuerpoPrincipal{
+	width: 960px;
+	height: 600px;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	/*background-color: white;*/
+}
+
+#subMenu{
+	height: 60px;
+}
+#subMenu ul{
+	list-style-type: none;
+	display: block;
+	margin-top: 20px;
+}
+#subMenu ul li{
+	float: left;
+	display: inline;
+}
+#subMenu ul li a{
+	display: block;
+	width: 77px;
+	height: 31px;
+	line-height: 28px;
+	padding: 0;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: black;	
+	text-decoration: none;
+	font-weight: 400;
+	outline: none;
+	text-align: center;
+}
+#subMenu ul li a:hover{
+	color: #3388FF;
+}
+
+
+#cuerpoSeccion{
+	background-color: #c8c8bd;
+	/*margin-left: 30px;
+	margin-top: 30px;*/
+	padding: 20px;
+}
+#cuerpoSeccion form label{
+	width: 150px;
+	display: inline-block;
+}
