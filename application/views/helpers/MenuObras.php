@@ -4,7 +4,7 @@ class Zend_View_Helper_MenuObras extends Zend_View_Helper_Abstract {
     
     public function MenuObras()
     {
-        return '<h1>Clientes</h1>
+        return '<h1>Obras</h1>
 		
 		<div id="subMenu">
 
