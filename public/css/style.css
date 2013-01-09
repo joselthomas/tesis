@@ -158,5 +158,5 @@ form input:focus{
 }
 #cuerpoSeccion form label{
 	width: 150px;
-	display: inline-block;
+	/* display: inline-block;*/
 }

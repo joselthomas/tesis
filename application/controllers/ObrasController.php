@@ -12,5 +12,13 @@ class ObrasController extends Zend_Controller_Action
     {
         
     }
+    
+    public function ingresarAction()
+    {
+        
+        $form = new Application_Form_Obra();
+        $this->view->form = $form;
+        
+    }
 }
 ?>
