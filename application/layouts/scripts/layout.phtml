@@ -13,31 +13,30 @@
 
 	<div id="logo"> <img src="/images/brainwork_logo.jpg" /> </div>
 	
-	<div id="menu">
-		<ul>
-			<li><a href="obras/listar">Obras</a></li>
-			<li><a href="#">Clientes</a></li>
-			<li><a href="#">Pagos</a></li>
-			<li><a href="#">Usuarios</a></li>
-		</ul>
-	</div>
-	
-	<div id="session"> Ha iniciado sesion como: <?php if (isset($_SESSION['user'])){echo $_SESSION['user'];} ?> </div>
+        <?php $auth = Zend_Auth::getInstance();
+        if ( $auth->hasIdentity()) : ?>
+
+                <div id="menu">
+                        <ul>
+                                <li><a href="obras/listar">Obras</a></li>
+                                <li><a href="#">Clientes</a></li>
+                                <li><a href="#">Pagos</a></li>
+                                <li><a href="#">Usuarios</a></li>
+                        </ul>
+                </div>
+
+        <div id="session"> Ha iniciado sesion como: <?php echo $auth->getIdentity() ?> <a href="/usuarios/logout" style="text-decoration: none; color:red;">[Logout]</a> </div>
+        
+        <?php endif; ?>
 	
     </div>
 
     <div id="cuerpoPrincipal">
 
-        
             <?php echo $this->layout()->content; ?>
 
-        </div>
-		
     </div>
     
-    
-
-
 </body>
         
 

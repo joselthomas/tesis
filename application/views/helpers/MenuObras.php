@@ -9,8 +9,8 @@ class Zend_View_Helper_MenuObras extends Zend_View_Helper_Abstract {
 		<div id="subMenu">
 
 			<ul>
-                            <li><a href="#">Listar</a></li>
-                            <li><a href="#">Agregar</a></li>
+                            <li><a href="/obras/listar">Listar</a></li>
+                            <li><a href="/obras/ingresar">Agregar</a></li>
                             <li><a href="#">Borrar</a></li>
                             <li><a href="#">Buscar</a></li>
                             <li><a href="#">Modificar</a></li>

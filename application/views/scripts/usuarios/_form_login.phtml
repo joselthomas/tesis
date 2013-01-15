@@ -1,0 +1,42 @@
+<div id="formLogin">
+  
+    <div class= "cleaner h40"></div>
+    <img id="imgLogin" src="images/login3.png"></img>
+    <div class= "cleaner h30"></div>
+    
+
+    <form method="POST" action="functions/validar_login.php">
+
+            <label id="lblUsuario" for="usuario">Usuario</label>
+
+            <div class="cleaner h10"></div>
+
+            <?php echo $this->element->getElement('txtUsuario');?>
+
+            <div class="cleaner h20"></div>
+
+            <label id="lblContraseña" for="contraseña">Contrase&ntilde;a</label>
+
+            <div class="cleaner h10"></div>
+
+            <?php echo $this->element->getElement('txtPassword');?>
+
+            <div class="cleaner h30"></div>
+            
+            <?php echo $this->element->getElement('submit');?>
+
+    </form>
+    
+    
+    <div id="users-form-errors" class='alert alert-error' style="display:none;">
+            <?php $errorMessages = $this->element->getMessages();
+                      foreach($errorMessages as $field => $errors) {
+                        echo sprintf("%s Errors: %s", $field, $this->formErrors($errors));
+                    } ?>
+    </div>
+    
+    <div id="users-form-success" class='alert alert-success' style="display:none;">
+        <p>Login Sucessfull</p>
+    </div>
+
+</div>

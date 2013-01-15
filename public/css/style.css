@@ -158,5 +158,13 @@ form input:focus{
 }
 #cuerpoSeccion form label{
 	width: 150px;
-	/* display: inline-block;*/
+	display: inline-block;
 }
+
+/* #cuerpoSeccion dl dt{
+    display: inline-block;
+}
+
+ #cuerpoSeccion dl dd {
+     display: inline-block;
+ } */
